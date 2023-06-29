@@ -10,13 +10,13 @@ body {
 }
 a {
   transition: all 0.3s ease;
-  color: rgb(175, 72, 3); /*ссылки*/
+  /*color: rgb(255, 255, 255); ссылки*/
 }
 
 a:hover,
 a:focus {
   text-decoration: none; 
-  color: rgb(255, 0, 0); /*ссылки при наведении*/
+  /*color: rgb(255, 255, 255); ссылки при наведении*/
 }
 
 a:focus {
@@ -58,12 +58,13 @@ blockquote {
   color: rgb(255, 234, 0); /*кнопки в главе "О нас"*/
   background-color: #000000;
   padding: 14px 30px;
+  border-radius: 2px;
 }
 
 .tm-btn-primary:hover,
 .tm-btn-primary:focus {
-  color: rgb(255, 255, 255); /*цвет текста кнопок при наведении*/
-  background-color: #dc8103ed; /*цвет фона кнопок при наведении*/
+  color: black; /*цвет текста кнопок при наведении*/
+  background-color: rgb(255, 234, 0);; /*цвет фона кнопок при наведении*/
 }
 
 /* Navbar */
@@ -89,7 +90,7 @@ blockquote {
 
 .navbar-brand:hover,
 .tm-navbar.scroll .navbar-brand:hover {
-  color: rgb(225, 70, 4); /*название в меню при наведении*/
+  color: rgb(255, 255, 255); /*название в меню при наведении*/
 }
 
 .tm-navbar.scroll .navbar-brand {
@@ -98,10 +99,15 @@ blockquote {
 
 .nav-item {
   list-style: none;
+
+  
+
+  margin: 0 10px;
 }
 
 .tm-nav-link {
   color: rgb(255, 255, 0); /*текст меню по умолч*/
+  border-radius: 2px;
 }
 
 .tm-navbar.scroll .tm-nav-link {
@@ -111,8 +117,10 @@ blockquote {
 .tm-navbar.scroll .tm-nav-link:hover,
 .tm-navbar.scroll .tm-nav-link.current,
 .tm-nav-link:hover {
-  color: #ffffff; /*цвет текста кнопки текущей страницы в меню*/
-  background-color: rgb(211, 99, 8); /*цвет фона кнопки текущей страници в меню*/
+  color: black; /*цвет текста кнопки текущей страницы в меню*/
+  background-color: rgb(246, 255, 0); /*цвет фона кнопки текущей страници в меню*/
+
+  
 }
 
 .navbar-toggler {
@@ -218,17 +226,20 @@ blockquote {
 }
 
 .tm-down-arrow {
-  	color: #6d6d6d; /*цвет стрелки кнопки для перехода в низ*/
+  	color: black; /*цвет стрелки кнопки для перехода в низ*/
     cursor: pointer;
     background: #fbff00; /*цвет фона кнопки для перехода в низ*/
     padding: 15px 40px;
     transition: all 0.3s ease;
+
+    border-radius: 2px;
 }
 
 .tm-down-arrow:hover,
 .tm-down-arrow:focus {
-  color: #cbcaca; /*цвет стрелки кнопки для перехода в низ при наведении*/
-  background: #d2900c; /*цвет фона кнопки для перехода в низ при наведении*/
+  color: #fbff00; /*цвет стрелки кнопки для перехода в низ при наведении*/
+  background: black; /*цвет фона кнопки для перехода в низ при наведении*/
+  border: solid #fbff00;
   padding: 20px 50px;
 }
 
@@ -337,11 +348,11 @@ blockquote {
 .slick-dots li button:focus:before,
 .slick-dots li.slick-active button:before {
   opacity: 1;
-  color: rgb(212, 157, 4); /*кружочки-ползунок в глаыве услуги*/
+  color: rgb(237, 234, 41); /*кружочки-ползунок в глаыве услуги*/
 }
 
 .tm-testimonials-carousel .slick-dots li button:before {
-  color: rgb(221, 224, 123); /*кружочки-ползунк в главе клиенты*/
+  color: rgb(237, 234, 41); /*кружочки-ползунк в главе клиенты*/
   opacity: 0.5;
 }
 
@@ -350,10 +361,12 @@ blockquote {
 .tm-testimonials-carousel .slick-dots li.slick-active button:before {
   color: rgb(237, 234, 41); /*текущая страница в кружочках-ползунках*/
   opacity: 1;
+  
 }
 
 .slick-dots li button:before {
   font-size: 18px;
+
 }
 
 /* Прикольный эфект на картинках при наведении (спизженый естественно) */
@@ -529,7 +542,7 @@ figure.effect-honey:hover h2 i {
 
 .item-link:hover i,
 .item-link:hover span {
-  color: #ffa200; /*Ссылки на контакты при наведении*/
+  color: #ffffff; /*Ссылки на контакты при наведении*/
 }
 
 .tm-input {
@@ -551,8 +564,9 @@ figure.effect-honey:hover h2 i {
 }
 
 .tm-btn-submit:hover {
-	color: #ffffff; /*цвет текста кнопки при наведении*/
-	background-color: rgb(253, 169, 0); /*цвет кнопки при наведении*/
+	color: rgb(251, 255, 0); /*цвет текста кнопки при наведении*/
+	background-color: black; /*цвет кнопки при наведении*/
+  border:solid rgb(251, 255, 0);
 }
 
 ::placeholder {
